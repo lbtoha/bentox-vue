@@ -18,16 +18,16 @@ function handleOnClick() {
 </script>
 
 <template>
-  <div className="theme-modal-button" @click="handleOnClick">
+  <div class="theme-modal-button" @click="handleOnClick">
     <button>
-      <!-- <Setting2 size="32" color="#ff6900" className="rotating setting-icon" /> -->
+      <!-- <Setting2 size="32" color="#ff6900" class="rotating setting-icon" /> -->
       <i class="iconsax rotating setting-icon" icon-name="setting-2"></i>
     </button>
   </div>
 
-  <div className="theme-modal modal-open">
-    <button className="theme-modal__theme-dir"></button>
-    <button className="theme-modal__theme-dir"></button>
+  <div class="theme-modal modal-open">
+    <button class="theme-modal__theme-dir"></button>
+    <button class="theme-modal__theme-dir"></button>
   </div>
 </template>
 

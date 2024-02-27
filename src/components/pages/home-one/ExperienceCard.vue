@@ -2,7 +2,7 @@
 import ExperienceCardItem from "./ExperienceCardItem.vue";
 </script>
 <template>
-  <div className="card-style experience-card">
+  <div class="card-style experience-card">
     <ExperienceCardItem
       :counterNumber="6"
       text="YEARS EXPERIENCE"

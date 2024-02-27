@@ -288,6 +288,12 @@
         flex-direction: column;
       }
 
+      &__item-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       &__item-text {
         font-weight: 300;
         color: var(--white-neutral1);

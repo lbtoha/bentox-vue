@@ -5,7 +5,7 @@ const arrayLength = Array.from({ length: 50 });
 </script>
 <template>
   <div class="card-style latest-card position-relative overflow-hidden">
-    <div class="marquee-wrapper">
+    <div class="marquee-wrapper latest-slider-two">
       <div class="marquee-inner to-left">
         <ul class="marqee-list d-flex">
           <li class="marquee-item">

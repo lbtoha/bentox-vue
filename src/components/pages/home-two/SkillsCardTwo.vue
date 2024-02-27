@@ -8,25 +8,32 @@ import {
   PhSketchLogo,
 } from "@phosphor-icons/vue";
 
-const sliderOneData = [
+const SkillsCardLandingTwo = [
   "UX Design",
   "UI Design",
   "Product Design",
   "Workshops",
   "Design Sprient",
-  "Design",
+  "Interaction Design",
   "UX Design",
   "UI Design",
   "Product Design",
   "Workshops",
   "Design Sprient",
-  "Design",
+  "Interaction Design",
   "UX Design",
   "UI Design",
   "Product Design",
   "Workshops",
   "Design Sprient",
-  "Design",
+  "Interaction Design",
+  "UX Design",
+  "UI Design",
+  "Product Design",
+  "Workshops",
+  "Design Sprient",
+  "Interaction Design",
+  "UX Design",
 ];
 
 const sliderTwo = [
@@ -86,17 +93,19 @@ const sliderTwo = [
   },
 ];
 </script>
-
 <template>
-  <div class="card-style skills-card">
-    <span class="heading-4 skills-card__title">Skills & Tools</span>
-    <div class="skills-card__slider-aria">
+  <div class="card-style skills-card-landing-two overflow-hidden">
+    <span class="heading-4 skills-card-landing-two__title">
+      Skills & Tools
+    </span>
+    <div class="skills-card-landing-two__slider-aria">
       <div class="marquee-wrapper text-slider">
         <div class="marquee-inner to-left">
           <ul class="marqee-list d-flex">
             <li class="marquee-item">
               <span
-                v-for="(item, index) in sliderOneData"
+                v-for="item in SkillsCardLandingTwo"
+                key="{`skills-card-landing${index}`}"
                 class="skills-card__slider-text"
               >
                 {{ item }}
@@ -110,15 +119,13 @@ const sliderTwo = [
         <div class="marquee-inner to-right">
           <ul class="marqee-list d-flex">
             <li class="marquee-item">
-              {sliderTwo.map(({ icon }, index) => (
               <span
                 v-for="({ icon }, index) in sliderTwo"
-                key="{`skill-slider-two${index}`}"
+                :key="`skill-slider-two${index}`"
                 class="skills-card__slider-two__box"
               >
                 <component :is="icon" size="32"></component>
               </span>
-              ))}
             </li>
           </ul>
         </div>

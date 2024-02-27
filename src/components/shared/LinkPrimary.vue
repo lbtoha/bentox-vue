@@ -1,8 +1,8 @@
-import { defineProps } from 'vue';
 <script setup lang="ts">
+import { defineProps } from "vue";
 import type { RouteLocationRaw } from "vue-router";
 
-defineProps<{ link: RouteLocationRaw; linkText: String; className?: string }>();
+defineProps<{ link: string; linkText: string; className?: string }>();
 </script>
 
 <template>

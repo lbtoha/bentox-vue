@@ -5,8 +5,8 @@ import Theme from "@/components/shared/Theme.vue";
 </script>
 
 <template>
-  <body className=" position-relative overflow-x-hidden">
-    <div className="position-relative overflow-hidden">
+  <body class="position-relative overflow-x-hidden">
+    <div class="position-relative overflow-hidden">
       <Theme />
       <Header />
       <RouterView />

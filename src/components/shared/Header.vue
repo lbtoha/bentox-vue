@@ -28,7 +28,7 @@ const isActive = (item: MenuItem) => {
 </script>
 
 <template>
-  <div className="navbar-container container position-relative z-3">
+  <div class="navbar-container container position-relative z-3">
     <div class="desktop-navbar-container">
       <div>
         <router-link to="/" class="logo-main">

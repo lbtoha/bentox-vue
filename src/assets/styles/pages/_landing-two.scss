@@ -148,7 +148,7 @@
         color: var(--white-neutral1);
       }
 
-      [dir="ltr"] &__shape {
+      &__shape {
         position: absolute;
         right: 20px;
         top: 20px;
@@ -481,6 +481,9 @@
         &__item-number {
           color: var(--white-neutral1);
           text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         &__item-text {

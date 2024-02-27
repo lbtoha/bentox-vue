@@ -7,7 +7,6 @@ import ProfileIcon from "./ProfileIcon.vue";
 <template>
   <div class="card-style profile-card">
     <div class="profile-icons">
-      <!-- <ProfileIcon icon="{<Be" size="40" />} socialLink="/" /> -->
       <ProfileIcon socialLink="/">
         <PhBehanceLogo :size="40" />
       </ProfileIcon>
