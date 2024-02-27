@@ -1,4 +1,5 @@
-import AboutVue from "@/pages/About.vue";
+import About from "@/pages/About.vue";
+import Blogs from "@/pages/Blogs.vue";
 import Home from "@/pages/Home.vue";
 import HomeTwo from "@/pages/HomeTwo.vue";
 import { createRouter, createWebHistory } from "vue-router";
@@ -14,14 +15,14 @@ const router = createRouter({
     },
     {
       path: "/about",
-      component: AboutVue,
-      meta: { title: "Home Two" },
+      component: About,
+      meta: { title: "About" },
     },
-    // {
-    //   path: "/blogs",
-    //   component: Blogs,
-    //   meta: { title: "Home Two" },
-    // },
+    {
+      path: "/blogs",
+      component: Blogs,
+      meta: { title: "Blogs" },
+    },
   ],
 });
 

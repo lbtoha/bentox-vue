@@ -6,11 +6,11 @@ import BlogLink from "./BlogLink.vue";
   <div class="blog-body__up-left">
     <div class="card-style-two big-blog-padding">
       <div class="image-container">
-        <img :src="blogBig" alt="Blog image" class="img-fluid" />{" "}
+        <img :src="blogBig" alt="Blog image" class="img-fluid" />
       </div>
       <div class="up-left__content">
         <div class="up-left__content-date">
-          <span class="textL font-thin">December 17,2023</span>{" "}
+          <span class="textL font-thin">December 17,2023</span>
           <span class="textL font-thin articles-tag">Articles</span>
         </div>
         <div class="up-left__content-title">
