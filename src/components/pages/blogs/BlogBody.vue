@@ -4,6 +4,7 @@ import blogList2 from "@/assets/image/list-blog-2.png";
 import blogList3 from "@/assets/image/list-blog-3.png";
 import BlogBig from "./BlogBig.vue";
 import BlogList from "./BlogList.vue";
+import BlogSlider from "./BlogSlider.vue";
 </script>
 <template>
   <div className="mt-xxl-10 mt-xl-8 mt-6 position-relative z-2 ">

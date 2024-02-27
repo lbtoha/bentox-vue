@@ -1,4 +1,5 @@
 import About from "@/pages/About.vue";
+import BlogDetails from "@/pages/BlogDetails.vue";
 import Blogs from "@/pages/Blogs.vue";
 import Home from "@/pages/Home.vue";
 import HomeTwo from "@/pages/HomeTwo.vue";
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/blogs",
       component: Blogs,
       meta: { title: "Blogs" },
+    },
+    {
+      path: "/blog-details",
+      component: BlogDetails,
+      meta: { title: "Blog Details" },
     },
   ],
 });
