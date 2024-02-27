@@ -2,9 +2,11 @@ import About from "@/pages/About.vue";
 import AllProjectsPage from "@/pages/AllProjectsPage.vue";
 import BlogDetails from "@/pages/BlogDetails.vue";
 import Blogs from "@/pages/Blogs.vue";
+import Contact from "@/pages/Contact.vue";
 import Home from "@/pages/Home.vue";
 import HomeTwo from "@/pages/HomeTwo.vue";
 import ProjectDetails from "@/pages/ProjectDetails.vue";
+import Services from "@/pages/Services.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -17,7 +19,7 @@ const router = createRouter({
       meta: { title: "Home Two" },
     },
     {
-      path: "/about",
+      path: "/about-us",
       component: About,
       meta: { title: "About" },
     },
@@ -40,6 +42,16 @@ const router = createRouter({
       path: "/project-details",
       component: ProjectDetails,
       meta: { title: "App Projects" },
+    },
+    {
+      path: "/services",
+      component: Services,
+      meta: { title: "Services " },
+    },
+    {
+      path: "/contact",
+      component: Contact,
+      meta: { title: "Services " },
     },
   ],
 });

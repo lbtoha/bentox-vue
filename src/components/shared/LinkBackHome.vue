@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { PhArrowLeft } from "@phosphor-icons/vue";
+</script>
 <template>
   <div class="m-t-60px z-2">
     <router-link to="/" class="button-back-to-home light-theme-white-text">

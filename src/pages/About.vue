@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import AboutUsBody from "@/components/pages/about/AboutUsBody.vue";
+import AboutTopLeftElement from "@/components/shared/AboutTopLeftElement.vue";
+import EllipseShapeLandingTwoBottomRight from "@/components/shared/EllipseShapeLandingTwoBottomRight.vue";
 import LinkBackHome from "@/components/shared/LinkBackHome.vue";
 </script>
 <template>
@@ -7,6 +9,8 @@ import LinkBackHome from "@/components/shared/LinkBackHome.vue";
     <LinkBackHome />
     <AboutUsBody image="{aboutOne}" />
   </div>
+  <AboutTopLeftElement />
+      <EllipseShapeLandingTwoBottomRight />
 </template>
 
 <style scoped></style>

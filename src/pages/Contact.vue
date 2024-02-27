@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import BlogBody from "@/components/pages/blogs/BlogBody.vue";
+import ContactBody from "@/components/pages/contact/ContactBody.vue";
 import LinkBackHome from "@/components/shared/LinkBackHome.vue";
 import AboutTopLeftElement from '@/components/shared/AboutTopLeftElement.vue';
 import EllipseShapeLandingTwoBottomRight from '@/components/shared/EllipseShapeLandingTwoBottomRight.vue';
 </script>
-
 <template>
   <div class="container">
     <LinkBackHome />
-    <BlogBody />
+    <ContactBody />
   </div>
   <AboutTopLeftElement />
       <EllipseShapeLandingTwoBottomRight />
