@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { useDark, useTextDirection, useToggle } from "@vueuse/core";
+import { PhGearSix } from "@phosphor-icons/vue";
+import { useDark, useToggle } from "@vueuse/core";
+import { onMounted, ref } from "vue";
 
 const isDark = useDark({
   selector: "body",
@@ -8,26 +10,57 @@ const isDark = useDark({
   valueLight: "custom-light",
 });
 
+const modalOpen = ref(false);
+
+const toggleThemeModal = () => {
+  modalOpen.value = true;
+};
+
 const toggleDark = useToggle(isDark);
 
-const dir = useTextDirection();
+const handleThemeSwitch = () => {
+  toggleDark();
+  modalOpen.value = false;
+};
 
-function handleOnClick() {
-  dir.value = dir.value === "rtl" ? "ltr" : "rtl";
+const dirValue = ref(localStorage.getItem("dir") || "ltr");
+
+const localStoreDir = localStorage.getItem("dir");
+
+onMounted(() => {
+  if (!localStoreDir) {
+    localStorage.setItem("dir", dirValue.value);
+  }
+  document.documentElement.dir = dirValue.value;
+});
+
+function handleDir() {
+  if (dirValue.value == "ltr") {
+    localStorage.setItem("dir", "rtl");
+    dirValue.value = "rtl";
+  } else {
+    localStorage.setItem("dir", "ltr");
+    dirValue.value = "ltr";
+  }
+  document.documentElement.dir = dirValue.value;
+  modalOpen.value = false;
 }
 </script>
 
 <template>
-  <div class="theme-modal-button" @click="handleOnClick">
+  <div class="theme-modal-button" @click="toggleThemeModal">
     <button>
-      <!-- <Setting2 size="32" color="#ff6900" class="rotating setting-icon" /> -->
-      <i class="iconsax rotating setting-icon" icon-name="setting-2"></i>
+      <PhGearSix :size="32" color="#ff6900" class="rotating setting-icon" />
     </button>
   </div>
 
-  <div class="theme-modal modal-open">
-    <button class="theme-modal__theme-dir"></button>
-    <button class="theme-modal__theme-dir"></button>
+  <div class="theme-modal" :class="`${modalOpen ? 'modal-open' : ''}`">
+    <button class="theme-modal__theme-dir" @click="handleDir">
+      {{ dirValue === "ltr" ? "RTL" : "LTR" }}
+    </button>
+    <button class="theme-modal__theme-dir" @click="handleThemeSwitch">
+      {{ isDark ? "Light" : "Dark" }}
+    </button>
   </div>
 </template>
 

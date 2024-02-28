@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
-  <div className="overflow-hidden">
-    <div className="ellipse-landing-two-bottom-right z-0 "></div>
+  <div class="overflow-hidden">
+    <div class="ellipse-landing-two-bottom-right z-0"></div>
   </div>
 </template>
 

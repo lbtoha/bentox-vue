@@ -8,18 +8,18 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div className="recent-post__card">
+  <div class="recent-post__card">
     <div>
-      <img :src="image" alt="Recent Post one" className="img-fluid" />
+      <img :src="image" alt="Recent Post one" class="img-fluid" />
     </div>
-    <div className="recent-post__card-content">
+    <div class="recent-post__card-content">
       <router-link
         to="/blog-details"
-        className="textXL d-block recent-post-card-title"
+        class="textXL d-block recent-post-card-title"
       >
         {{ title }}
       </router-link>
-      <span className="date">{{ date }}</span>
+      <span class="date">{{ date }}</span>
     </div>
   </div>
 </template>

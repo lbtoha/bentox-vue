@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { computed, ref } from "vue";
+import { ref } from "vue";
 
 import { Autoplay, Navigation } from "swiper/modules";
 
@@ -120,8 +120,6 @@ const blogSlider = [
 const filterData = ref(blogSlider);
 const buttonActive = ref("");
 
-const uniqueTags = computed(() => new Set(blogSlider.map((item) => item.tag)));
-
 const handleFilterData = (event: MouseEvent) => {
   const buttonText = event.target as HTMLElement;
   buttonActive.value = buttonText.innerText.toLowerCase();
@@ -166,7 +164,6 @@ const handleFilterData = (event: MouseEvent) => {
       </div>
       <div class="slider-buttons">
         <button class="customerSliderNext blog-slider-button">
-          <ArrowLeft2 />
           <PhCaretLeft :size="24" />
         </button>
         <button class="customerSliderPrev blog-slider-button">

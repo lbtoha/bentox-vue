@@ -1,8 +1,7 @@
-import ProfileIcon from '@/components/pages/home-one/ProfileIcon.vue';
 <script setup lang="ts">
-import ProfileIcon from "../home-one/ProfileIcon.vue";
+import ProfileIcon from "@/components/pages/home-one/ProfileIcon.vue";
+import { PhBehanceLogo, PhInstagramLogo } from "@phosphor-icons/vue";
 import LinkPrimaryTwo from "../home-two/LinkPrimaryTwo.vue";
-import { PhBehanceLogo, PhInstagramLogo } from '@phosphor-icons/vue';
 </script>
 <template>
   <div class="about-profile about-card p-32px profile-card">

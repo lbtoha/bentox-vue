@@ -11,14 +11,14 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div className="experience-in-number__item">
-    <p className="experience-in-number__item-number heading-1">
+  <div class="experience-in-number__item">
+    <p class="experience-in-number__item-number heading-1">
       {{ counterElement }}
-      <!-- <ReactCounterUp end="{counterNumber}" decimals="{decimals}" /> -->
+
       <CustomCounterUp :counter-number="counterNumber" />
       {{ rightElement }}
     </p>
-    <p className="textL experience-in-number__item-text ">{{ text }}</p>
+    <p class="textL experience-in-number__item-text">{{ text }}</p>
   </div>
 </template>
 

@@ -5,13 +5,13 @@ import { defineProps } from "vue";
 defineProps<{ time: string; title: string; company: string }>();
 </script>
 <template>
-  <div className="my-experience__content-item">
+  <div class="my-experience__content-item">
     <PhCaretDoubleRight :size="24" />
-    <p className="textM">{{ time }}</p>
-    <div className="dash"></div>
-    <p className="textM">{{ title }}</p>
-    <div className="dash"></div>
-    <p className="textM">{{ company }}</p>
+    <p class="textM">{{ time }}</p>
+    <div class="dash"></div>
+    <p class="textM">{{ title }}</p>
+    <div class="dash"></div>
+    <p class="textM">{{ company }}</p>
   </div>
 </template>
 

@@ -60,7 +60,7 @@ const blogSlider = [
       <div class="related-blog">
         <div class="related-blog__heading">
           <h3 class="heading-2">Related Blog</h3>
-          <ArrowButton link="/blog" text="See all blogs" />
+          <ArrowButton link="/blogs" text='See all blogs' />
         </div>
         <div class="m-t-60px blog-card-section">
           <BlogSliderItem

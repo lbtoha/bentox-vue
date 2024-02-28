@@ -1,17 +1,23 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
-const preloader = ref<HTMLElement | null>(null);
+const showPreloader = ref(true);
 
 onMounted(() => {
-  preloader.value = document.getElementById("preloader");
-  if (preloader.value) {
-    (preloader.value as HTMLElement).style.display = "none";
-  }
+  setTimeout(() => {
+    showPreloader.value = false;
+  }, 1000);
+});
+
+onUnmounted(() => {
+  // Clean up any event listeners or timers here
 });
 </script>
+
 <template>
-  <div id="preloader">
+  <div id="preloader" v-if="showPreloader">
     <div class="layla-preloader text-center"></div>
   </div>
 </template>
+
+<style scoped></style>

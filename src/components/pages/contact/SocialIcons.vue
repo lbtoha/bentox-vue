@@ -8,41 +8,41 @@ import {
 } from "@phosphor-icons/vue";
 </script>
 <template>
-  <div className="m-t-120px social-icon-section">
-    <router-link to="https://www.facebook.com" className="social-icon">
-      <span className="icon">
+  <div class="m-t-120px social-icon-section">
+    <a href="https://www.facebook.com" class="social-icon">
+      <span class="icon">
         <PhFacebookLogo :size="24" />
       </span>
-      <span className="textLead icon-name">Facebook</span>
-    </router-link>
+      <span class="textLead icon-name">Facebook</span>
+    </a>
 
-    <router-link to="https://twitter.com/" className="social-icon">
-      <span className="icon">
+    <a href="https://twitter.com/" class="social-icon">
+      <span class="icon">
         <PhTwitchLogo :size="24" />
       </span>
-      <p className="textLead icon-name">Twitter</p>
-    </router-link>
+      <p class="textLead icon-name">Twitter</p>
+    </a>
 
-    <router-link to="https://dribbble.com/" className="social-icon">
-      <span className="icon">
+    <a href="https://dribbble.com/" class="social-icon">
+      <span class="icon">
         <PhDribbbleLogo :size="24" />
       </span>
-      <p className="textLead icon-name">Dribbble</p>
-    </router-link>
+      <p class="textLead icon-name">Dribbble</p>
+    </a>
 
-    <router-link to="https://www.instagram.com/" className="social-icon">
-      <span className="icon">
+    <a href="https://www.instagram.com/" class="social-icon">
+      <span class="icon">
         <PhInstagramLogo :size="24" />
       </span>
-      <p className="textLead icon-name">Instagram</p>
-    </router-link>
+      <p class="textLead icon-name">Instagram</p>
+    </a>
 
-    <router-link to="https://www.behance.net/" className="social-icon">
-      <span className="icon">
+    <a href="https://www.behance.net/" class="social-icon">
+      <span class="icon">
         <PhBehanceLogo :size="24" />
       </span>
-      <p className="textLead icon-name">Behance</p>
-    </router-link>
+      <p class="textLead icon-name">Behance</p>
+    </a>
   </div>
 </template>
 

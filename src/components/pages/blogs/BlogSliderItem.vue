@@ -11,26 +11,22 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div className="card-style-two blog-slider">
-    <div className="image-container">
-      <img :src="image" alt="Blog image" className="img-fluid" />
+  <div class="card-style-two blog-slider">
+    <div class="image-container">
+      <img :src="image" alt="Blog image" class="img-fluid" />
     </div>
-    <div className="blog-slider__content">
-      <div className="blog-slider__content-date">
-        <span className="textS font-thin">{{ date }}</span>
-        <span className="textS font-thin articles-tag">{{ tag }}</span>
+    <div class="blog-slider__content">
+      <div class="blog-slider__content-date">
+        <span class="textS font-thin">{{ date }}</span>
+        <span class="textS font-thin articles-tag">{{ tag }}</span>
       </div>
-      <div className="blog-slider__content-title">
+      <div class="blog-slider__content-title">
         <router-link to="/blog-details">
-          <h3 className="heading-4 font-medium list-blog-title">{{ title }}</h3>
+          <h3 class="heading-4 font-medium list-blog-title">{{ title }}</h3>
         </router-link>
-        <p className="textM font-thin">{{ text }}</p>
+        <p class="textM font-thin">{{ text }}</p>
       </div>
-      <BlogLink
-        link="/blog-details"
-        linkText="Read Now"
-        className="slider-link"
-      />
+      <BlogLink link="/blog-details" linkText="Read Now" class="slider-link" />
     </div>
   </div>
 </template>

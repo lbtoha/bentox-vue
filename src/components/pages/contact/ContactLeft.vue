@@ -18,9 +18,9 @@ import { PhMapPin, PhPaperPlaneTilt, PhPhone } from "@phosphor-icons/vue";
         </div>
         <div class="contact-info__card-info">
           <p class="textLead">Phone</p>
-          <Link href="tel:+3567897483" class="textM font-thin link">
+          <a href="tel:+3567897483" class="textM font-thin link">
             (302) 555-0107
-          </Link>
+          </a>
         </div>
       </div>
       <!-- {/* email */} -->
@@ -30,12 +30,12 @@ import { PhMapPin, PhPaperPlaneTilt, PhPhone } from "@phosphor-icons/vue";
         </div>
         <div class="contact-info__card-info">
           <p class="textLead">Email</p>
-          <Link
+          <a
             href="mailto:tanya.hill@example.com"
             class="textM font-thin link"
           >
             tanya.hill@example.com
-          </Link>
+          </a>
         </div>
       </div>
       <div class="contact-info__card">

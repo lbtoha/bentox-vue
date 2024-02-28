@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
-import type { RouteLocationRaw } from "vue-router";
 
 defineProps<{ link: string; linkText: string; className?: string }>();
 </script>

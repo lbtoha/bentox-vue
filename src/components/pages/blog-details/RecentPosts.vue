@@ -5,8 +5,8 @@ import recentPost3 from "@/assets/image/recent-post-3.png";
 import RecentPost from "./RecentPost.vue";
 </script>
 <template>
-  <div className="m-t-32px recent-post">
-    <h5 className="heading-4 recent-post__title">Recent Posts</h5>
+  <div class="m-t-32px recent-post">
+    <h5 class="heading-4 recent-post__title">Recent Posts</h5>
     <RecentPost
       :image="recentPost1"
       title="Design Chronicles: Aroha's Odyssey"

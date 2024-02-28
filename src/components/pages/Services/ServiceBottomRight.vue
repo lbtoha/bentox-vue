@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="about-top-left-element"></div>
+  <div class="service-bottom-right"></div>
 </template>
 
 <style scoped></style>

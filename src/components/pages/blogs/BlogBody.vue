@@ -7,11 +7,11 @@ import BlogList from "./BlogList.vue";
 import BlogSlider from "./BlogSlider.vue";
 </script>
 <template>
-  <div className="mt-xxl-10 mt-xl-8 mt-6 position-relative z-2 ">
-    <div className="blog-body">
-      <div className="blog-body__up">
+  <div class="mt-xxl-10 mt-xl-8 mt-6 position-relative z-2">
+    <div class="blog-body">
+      <div class="blog-body__up">
         <BlogBig />
-        <div className=" blog-body__up-right">
+        <div class="blog-body__up-right">
           <BlogList
             :image="blogList1"
             date="December 17,2023"

@@ -4,17 +4,17 @@
     <h5 class="heading-4">Categories:</h5>
 
     <div class="categories-card__categories">
-      <router-link to="/blog" class="textL category"> Web Design </router-link>
-      <router-link to="/blog" class="textL category">
+      <router-link to="/blogs" class="textL category"> Web Design </router-link>
+      <router-link to="/blogs" class="textL category">
         Graphic Design
       </router-link>
-      <router-link to="/blog" class="textL category">
+      <router-link to="/blogs" class="textL category">
         E-commerce Solutions
       </router-link>
-      <router-link to="/blog" class="textL category">
+      <router-link to="/blogs" class="textL category">
         Mobile App Development
       </router-link>
-      <router-link to="/blog" class="textL category">
+      <router-link to="/blogs" class="textL category">
         Video Production
       </router-link>
     </div>

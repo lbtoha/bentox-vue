@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
 
-const props = defineProps({
-  link: String,
+defineProps({
+  link: {
+    type: String,
+    default: "",
+  },
   text: {
     type: String,
     default: "Let’s Talk",
@@ -11,7 +14,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <router-link :to="link!" class="kewta-btn d-flex align-items-center">
+  <router-link :to="link" class="kewta-btn d-flex align-items-center">
     <span class="kew-text light-theme-white-text">{{ text }}</span>
     <span class="kew-arrow">
       <div class="kt-one">

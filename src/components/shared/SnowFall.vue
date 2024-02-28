@@ -47,7 +47,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div className="snowfall-container">
+  <div class="snowfall-container">
     <template
       v-for="snowflake in snowflakes"
       :key="`snow-fall-${snowflake.id}`"

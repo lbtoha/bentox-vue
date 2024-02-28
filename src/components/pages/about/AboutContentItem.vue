@@ -6,10 +6,10 @@ defineProps<{
 }>();
 </script>
 <template>
-  <div className="about-education__content-item">
-    <p className="textM year">{{ year }}</p>
-    <p className="textXL title">{{ title }}</p>
-    <p className="textM university">{{ university }}</p>
+  <div class="about-education__content-item">
+    <p class="textM year">{{ year }}</p>
+    <p class="textXL title">{{ title }}</p>
+    <p class="textM university">{{ university }}</p>
   </div>
 </template>
 

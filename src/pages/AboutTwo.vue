@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import AllProjectBody from "@/components/pages/all-projects/AllProjectBody.vue";
+import aboutTwo from "@/assets/image/landing-bio-image.png";
+import AboutUsBody from "@/components/pages/about/AboutUsBody.vue";
 import AboutTopLeftElement from "@/components/shared/AboutTopLeftElement.vue";
 import EllipseShapeLandingTwoBottomRight from "@/components/shared/EllipseShapeLandingTwoBottomRight.vue";
 import LinkBackHome from "@/components/shared/LinkBackHome.vue";
@@ -8,7 +9,7 @@ import AfterEffect from '@/components/shared/AfterEffect.vue';
 <template>
   <div class="container">
     <LinkBackHome />
-    <AllProjectBody />
+    <AboutUsBody :image="aboutTwo" />
   </div>
   <AfterEffect />
   <AboutTopLeftElement />

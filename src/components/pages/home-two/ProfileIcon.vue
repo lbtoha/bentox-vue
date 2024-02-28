@@ -7,10 +7,10 @@ defineProps<{ socialLink: string }>();
 <template>
   <router-link
     :to="`${socialLink}`"
-    className="position-relative  icon-container profile-icon"
+    class="position-relative icon-container profile-icon"
   >
     <slot />
-    <img :src="hoverIcon" alt="Hover Icon" className="hover-icon" />
+    <img :src="hoverIcon" alt="Hover Icon" class="hover-icon" />
   </router-link>
 </template>
 

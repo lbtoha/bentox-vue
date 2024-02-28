@@ -110,7 +110,6 @@ const sliderTwo = [
         <div class="marquee-inner to-right">
           <ul class="marqee-list d-flex">
             <li class="marquee-item">
-              {sliderTwo.map(({ icon }, index) => (
               <span
                 v-for="({ icon }, index) in sliderTwo"
                 key="{`skill-slider-two${index}`}"
@@ -118,7 +117,6 @@ const sliderTwo = [
               >
                 <component :is="icon" size="32"></component>
               </span>
-              ))}
             </li>
           </ul>
         </div>
