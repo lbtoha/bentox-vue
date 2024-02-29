@@ -1,4 +1,5 @@
-<script setup lang="ts">import AllBlogsCard from "@/components/pages/home-one/AllBlogsCard.vue";
+<script setup lang="ts">
+import AllBlogsCard from "@/components/pages/home-one/AllBlogsCard.vue";
 import AllProjects from "@/components/pages/home-one/AllProjects.vue";
 import AllServiceCard from "@/components/pages/home-one/AllServiceCard.vue";
 import BioCard from "@/components/pages/home-one/BioCard.vue";
@@ -7,7 +8,8 @@ import GetInTouchCard from "@/components/pages/home-one/GetInTouchCard.vue";
 import LatestCardLandingOne from "@/components/pages/home-one/LatestCardLandingOne.vue";
 import ProfileCard from "@/components/pages/home-one/ProfileCard.vue";
 import SkillsCardAnimationOne from "@/components/pages/home-one/SkillsCardAnimationOne.vue";
-import TitleCard from "@/components/pages/home-one/TitleCard.vue";</script>
+import TitleCard from "@/components/pages/home-one/TitleCard.vue";
+</script>
 <template>
   <div class="m-t-60px container position-relative z-2">
     <div class=" ">

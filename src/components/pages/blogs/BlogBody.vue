@@ -2,6 +2,7 @@
 import blogList1 from "@/assets/image/list-blog-1.png";
 import blogList2 from "@/assets/image/list-blog-2.png";
 import blogList3 from "@/assets/image/list-blog-3.png";
+import CustomTransition from "@/components/shared/CustomTransition.vue";
 import BlogBig from "./BlogBig.vue";
 import BlogList from "./BlogList.vue";
 import BlogSlider from "./BlogSlider.vue";
@@ -10,7 +11,9 @@ import BlogSlider from "./BlogSlider.vue";
   <div class="mt-xxl-10 mt-xl-8 mt-6 position-relative z-2">
     <div class="blog-body">
       <div class="blog-body__up">
-        <BlogBig />
+        <CustomTransition>
+          <BlogBig />
+        </CustomTransition>
         <div class="blog-body__up-right">
           <BlogList
             :image="blogList1"

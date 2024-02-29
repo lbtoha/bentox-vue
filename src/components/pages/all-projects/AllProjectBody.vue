@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import image11 from "@/../public/image/all-project-11.png";
-import image12 from "@/../public/image/all-project-12.png";
-import image13 from "@/../public/image/all-project-13.png";
-import image21 from "@/../public/image/all-project-21.png";
-import image31 from "@/../public/image/all-project-31.png";
-import image32 from "@/../public/image/all-project-32.png";
+import image11 from "@/assets/image/all-project-11.png";
+import image12 from "@/assets/image/all-project-12.png";
+import image13 from "@/assets/image/all-project-13.png";
+import image21 from "@/assets/image/all-project-21.png";
+import image31 from "@/assets/image/all-project-31.png";
+import image32 from "@/assets/image/all-project-32.png";
 import AllProjectImage from "./AllProjectImage.vue";
 </script>
 <template>

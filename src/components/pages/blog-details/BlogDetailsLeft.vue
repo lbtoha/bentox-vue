@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import quoteImage from "@/assets/image/quote-down.png";
+import CustomTransition from "@/components/shared/CustomTransition.vue";
 </script>
 <template>
   <div class="blog-details-container__left">
@@ -66,15 +67,21 @@ import quoteImage from "@/assets/image/quote-down.png";
       <h5 class="heading-4">Leave A Comment</h5>
       <form class="comment-section__area">
         <div class="name-and-email">
-          <input type="text" class="name" placeholder="Name" />
-          <input type="email" class="name" placeholder="Email" />
+          <CustomTransition>
+            <input type="text" class="name" placeholder="Name" />
+          </CustomTransition>
+          <CustomTransition>
+            <input type="email" class="name" placeholder="Email" />
+          </CustomTransition>
         </div>
-        <textarea
-          name="txtname"
-          :rows="5"
-          class="textarea"
-          placeholder="Type a comment"
-        />
+        <CustomTransition>
+          <textarea
+            name="txtname"
+            :rows="5"
+            class="textarea"
+            placeholder="Type a comment"
+          />
+        </CustomTransition>
         <button class="comment-submit">
           <span class="textM post-comment light-theme-white-text">
             Post Comment

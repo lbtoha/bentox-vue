@@ -2,8 +2,10 @@
 import ProfileIcon from "@/components/pages/home-one/ProfileIcon.vue";
 import { PhBehanceLogo, PhInstagramLogo } from "@phosphor-icons/vue";
 import LinkPrimaryTwo from "../home-two/LinkPrimaryTwo.vue";
+import CustomTransition from '@/components/shared/CustomTransition.vue';
 </script>
 <template>
+  <CustomTransition>
   <div class="about-profile about-card p-32px profile-card">
     <div class="profile-icons">
       <ProfileIcon socialLink="/">
@@ -21,7 +23,7 @@ import LinkPrimaryTwo from "../home-two/LinkPrimaryTwo.vue";
         class="about-profile-link"
       />
     </div>
-  </div>
+  </div></CustomTransition>
 </template>
 
 <style scoped></style>

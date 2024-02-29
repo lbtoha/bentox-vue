@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import image from "@/assets/image/shape-11.png";
+import CustomTransition from '@/components/shared/CustomTransition.vue';
 </script>
 <template>
+  <CustomTransition>
   <div class="about-card card-hello">
     <span class="heading-3">Hello,</span>
     <h2 class="heading-3">I’m Gole Layla, an Award-Winning</h2>
@@ -16,7 +18,7 @@ import image from "@/assets/image/shape-11.png";
       alt="Shape"
       class="card-hello__shape light-mood-image-shape"
     />
-  </div>
+  </div></CustomTransition>
 </template>
 
 <style scoped></style>

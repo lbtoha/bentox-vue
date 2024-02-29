@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ProfileIcon from "@/components/pages/home-one/ProfileIcon.vue";
+import CustomTransition from "@/components/shared/CustomTransition.vue";
 import {
   PhBehanceLogo,
   PhDribbbleLogo,
@@ -44,17 +45,19 @@ import SkillsCardTwo from "./SkillsCardTwo.vue";
                   counterElement="+"
                 />
               </div>
-              <div class="profile profile-icons card-style-two p-32px">
-                <ProfileIcon socialLink="/">
-                  <PhBehanceLogo :size="40" />
-                </ProfileIcon>
-                <ProfileIcon socialLink="/">
-                  <PhInstagramLogo :size="40" />
-                </ProfileIcon>
-                <ProfileIcon socialLink="/">
-                  <PhDribbbleLogo :size="40" />
-                </ProfileIcon>
-              </div>
+              <CustomTransition>
+                <div class="profile profile-icons card-style-two p-32px">
+                  <ProfileIcon socialLink="/">
+                    <PhBehanceLogo :size="40" />
+                  </ProfileIcon>
+                  <ProfileIcon socialLink="/">
+                    <PhInstagramLogo :size="40" />
+                  </ProfileIcon>
+                  <ProfileIcon socialLink="/">
+                    <PhDribbbleLogo :size="40" />
+                  </ProfileIcon>
+                </div>
+              </CustomTransition>
             </div>
           </div>
         </div>
